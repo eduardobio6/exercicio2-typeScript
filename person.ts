@@ -20,5 +20,5 @@ export class Person {
   getBirthdayYear() {
     return 2022 - this.age;
    }
-  
+   
 }

@@ -1,20 +1,24 @@
-class person {
+export class Person {
   firstname: string;
   middlename: string;
+  lastname: string;
   age: number;
-  constructor(name: string, mname: string, yourage: number) {
+  email: Array<string> = ['gmail@gmail.com', 'hotmail@hotmail.com'];
+
+  constructor(name: string, mname: string,lname: string, yourage: number) {
     this.firstname = name;
     this.middlename = mname;
+    this.lastname = lname;
     this.age = yourage;
+    
   }
 
   getFullname() {
-    return 'My name is: ' + this.firstname + ' ' + this.middlename;
+    return 'Seu nome é: ' + this.firstname + ' ' + this.middlename + ' ' + this.lastname;
   }
 
   getBirthdayYear() {
     return 2022 - this.age;
-  }
-
-  List: Array<string> = [];
+   }
+  
 }
